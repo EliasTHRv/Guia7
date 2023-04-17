@@ -31,7 +31,7 @@ public class Punto {
         this.y2 = y2;
     }
 
-    public void rellenarP() {
+    public void crearPuntos() {
         System.out.println("Cargar valores para  x1, y1: ");
         this.x1 = leer.nextDouble();
         this.y1 = leer.nextDouble();

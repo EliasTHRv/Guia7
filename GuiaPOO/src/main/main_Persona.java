@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package main;
 
 import entidad.Persona;
@@ -14,7 +10,7 @@ import java.util.Scanner;
 public class main_Persona {
 
     public static void main(String[] args) {
-        Scanner leer = new Scanner(System.in);
+//        Scanner leer = new Scanner(System.in);
         
         Persona per2 = new Persona("Belen", 1985, "Argentina");
 
