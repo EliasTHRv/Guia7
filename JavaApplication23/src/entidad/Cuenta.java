@@ -1,5 +1,7 @@
 package entidad;
 
+import java.util.Scanner;
+
 /**
  * Crea una clase "Cuenta" que tenga atributos como "saldo" y "titular". Luego,
  * crea un método "retirar_dinero" que permita retirar una cantidad de dinero
@@ -9,8 +11,11 @@ package entidad;
  * @author elias
  */
 public class Cuenta {
-public int saldo;
-public String titular;
+
+    public int saldo;
+    public String titular;
+
+    Scanner leer = new Scanner(System.in).useDelimiter("\n");
 
     public Cuenta() {
     }
@@ -20,11 +25,32 @@ public String titular;
         this.titular = titular;
     }
 
-public void     
-    
-    
-    
-    
+    public void retirar_dinero() {
+        System.out.println("Ingrese el nombre del titular: ");
+        titular = leer.next();
+        saldo = 30000;
+        boolean aux = false;
+        int retiro;
+        do
+        {
+            System.out.println("Ingrese el saldo a retirar: ");
+            retiro = leer.nextInt();
+            
+            if (retiro>saldo)
+            {
+                System.out.println("No posee fondos suficientes:");
+                aux = true;
+            } else
+            {
+                saldo -= retiro;
+            }
+            
+            System.out.println("Su saldo es de: " + saldo);
+
+        } while (aux != true);
+
+    }
+
     public int getSaldo() {
         return saldo;
     }
@@ -41,6 +67,4 @@ public void
         this.titular = titular;
     }
 
-
-    
 }
