@@ -63,7 +63,7 @@ String seleccion = "s";
                 break;
             }
             if (nuM2 > nuM )
-                
+           
             {
                 System.out.println("Pruebe con un mas bajo: ");
             } else if (nuM2< nuM)
