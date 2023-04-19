@@ -14,14 +14,9 @@ public class Rectangulo {
 public double lado1, lado2;
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
     public Rectangulo() {
-        
-        System.out.println("   ");
     }
-
     
-   
-    
-    public Rectangulo(double lado1, double lado2) {
+ public Rectangulo(double lado1, double lado2) {
         this.lado1 = lado1;
         this.lado2 = lado2;
     }

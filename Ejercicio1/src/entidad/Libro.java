@@ -28,16 +28,24 @@ public class Libro {
         this.numeroPaginas = numeroPaginas;
     }
 
-    public void  cargarLibro(Libro libro) {
-        Scanner leer = new Scanner(System.in);
+    public void cargarLibro(Libro libro) {
+        Scanner leer = new Scanner(System.in).useDelimiter("\n");
         System.out.println("Ingrese el ISBN del libro");
         this.ISBN = leer.nextInt();
         System.out.println("Ingrese el titulo del libro");
-        this.Titulo = leer.nextLine();
+        this.Titulo = leer.next();
         System.out.println("Ingrese el autor del libro");
-        this.autor = leer.nextLine();
+        this.autor = leer.next();
         System.out.println("Ingrese el número de paginas del libro");
         this.numeroPaginas = leer.nextInt();
+
+    }
+
+    public void mostrarLibro() {
+        System.out.println("El ISBN del libro es: " + ISBN);
+        System.out.println("El titulo del libro es: " + Titulo);
+        System.out.println("El autor del libro es: " + autor);
+        System.out.println("El N° de paginas del libro es: " + numeroPaginas);
 
     }
 

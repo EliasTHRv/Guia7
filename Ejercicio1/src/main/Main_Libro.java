@@ -13,7 +13,7 @@ public class Main_Libro {
         
         libro1.cargarLibro(libro1);
         
-        
+        libro1.mostrarLibro();
         
         
     }

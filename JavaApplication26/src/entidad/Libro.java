@@ -8,6 +8,6 @@ package entidad;
  *
  * @author elias
  */
-class seleccion {
+public class Libro {
     
 }

@@ -54,7 +54,16 @@ String seleccion = "s";
             System.out.println(juG2+" Tiene " + intenTos + " intentos" );
             nuM2 = leer.nextInt();
             intenTos --;
+            
+            if (intenTos == 0)
+            {
+                System.out.println("Se acabaron los intentos");
+                System.out.println("El numero a adivinar era "+ nuM);
+                conT1 ++;
+                break;
+            }
             if (nuM2 > nuM )
+                
             {
                 System.out.println("Pruebe con un mas bajo: ");
             } else if (nuM2< nuM)
@@ -68,15 +77,11 @@ String seleccion = "s";
                 conT2 ++;
                 break;
             }
-            if (intenTos == 0)
-            {
-                System.out.println("Se acabaron los intentos");
-                conT1 ++;
-                break;
-            }
+            
             
             
         }
+        
         System.out.println("Quiere seguir jugando s/n? ");
         seleccion = leer.next();
         
